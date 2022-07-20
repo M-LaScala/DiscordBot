@@ -1,9 +1,9 @@
 ﻿using Discord.WebSocket;
 using Discord.Commands;
 using Discord.WebSocket;
+using Discord;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using Discord;
 
 namespace AzraelBot
 {
@@ -34,7 +34,7 @@ namespace AzraelBot
             // Aqui estou lendo o token de um arquivo externo
             try
             {
-                var token = File.ReadAllText(@"D:\Matheus\Programação\Programas em C#\AzraelBot\token.txt");
+                var token = File.ReadAllText(@"D:\Matheus\Programação\Programas em C#\DiscordBot\NoCommit\token.txt");
                 await _client.LoginAsync(TokenType.Bot, token);
             }
             catch (Exception E)
